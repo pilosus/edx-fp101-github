@@ -1,0 +1,35 @@
+=== Functor ===
+A functor has only little to do with the Java 8 Functional
+Interfaces. A Functor is like an interface that specifies only 1
+single method: fmap :: (a -> b) -> f a -> f a. For the list functor,
+for example, you give it a function a -> b and a list [a]and out comes
+a list [b]. What you do internally is apply the function to each
+element in [a] and collect those results in [b]. (Hope you understand
+why the outcome is a [b]...)
+
+So, fmap (\x -> x + 1) [1,2,3,4] = [2,3,4,5], because you apply that
+function to each element of the input list.
+
+Now we do the same to these trees. For every element in the tree, we
+apply a function and out comes another tree of the return type...
+
+=== Monoids ===
+
+Monoids are totally different! The are here to concat things
+together. That's why it has this method mappend :: m a -> m a -> m
+a. So, for lists again, we have mappend :: [a] -> [a] -> [a]. This
+means: you give it two lists of the same type and out comes 1 list of
+that very same type. For example: mappend [1,2,3] [4,5,6] =
+[1,2,3,4,5,6].
+
+The other method on monoid: mzero :: m a is just a way to supply a
+zero- or base element to the monoid. For list that would be [], right?
+
+We can not only make a monoid out of lists, but we can do this for any
+other type that wants to be concattened. In the lab you are asked to
+write instances of Sum and Product. Think about it, what means mzero
+for a Sum type and what does mappend mean for a Sum? Same for Product.
+
+Hope this helps you out!
+
+======================================================================
