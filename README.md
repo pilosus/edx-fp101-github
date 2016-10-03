@@ -7,6 +7,10 @@ by Erik Meijer hosted on the [edX](https://www.edx.org/).
 This repo contains lecture examples and their modifications, as well
 as home work assignments written in Haskell programming language.
 
+# Recommended reading
+
+Graham Hutton. Programming in Haskell. Cambridge University Press, 2007.
+
 # Certificate
 
 A verified Certificate of Achievement can be found
