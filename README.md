@@ -4,6 +4,10 @@ A MOOC [Introduction to Functional Programming](https://www.edx.org/course/intro
 
 This repo contains lecture examples and their modifications, home work assignments submitted on the second (?) MOOC run in 2015.
 
+# Certificate
+
+A verified Certificate of Achievement can be found [here](https://courses.edx.org/certificates/d5014f52f651425288a1f5e6d515a479).
+
 # Authors
 
 All lectures code, assignment templates belong to their original authors.
